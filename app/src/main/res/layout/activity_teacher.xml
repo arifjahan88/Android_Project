@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cseraj.rpiteachers.TeachersActivity">
+
+
+  <TextView
+
+      android:id="@+id/tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignStart="@+id/relativeLayout"
+      android:layout_marginStart="37dp"
+      android:layout_marginTop="26dp"
+      android:text="Choose Your Department"
+      android:textColor="@color/colorAccent"
+      android:textSize="23sp"
+      android:textStyle="bold" />
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="15dp"
+      android:layout_below="@id/tv"
+      android:id="@+id/relativeLayout">
+
+    <Button
+        android:id="@+id/cmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Computer " />
+
+  <Button
+      android:id="@+id/civ"
+      android:layout_below="@+id/cmt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Civil "/>
+
+  <Button
+      android:id="@+id/el"
+      android:layout_below="@+id/civ"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Electrical "/>
+  <Button
+      android:id="@+id/et"
+      android:layout_below="@+id/el"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Electronics "/>
+  <Button
+      android:id="@+id/em"
+      android:layout_below="@+id/et"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Electromedical "/>
+  <Button
+      android:id="@+id/mn"
+      android:layout_below="@+id/em"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Mechanical "/>
+  <Button
+      android:id="@+id/mt"
+      android:layout_below="@+id/mn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Mechatronics "/>
+  <Button
+      android:id="@+id/pw"
+      android:layout_below="@+id/mt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Power "/>
+
+   <Button
+       android:id="@+id/non"
+       android:layout_below="@+id/pw"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Non Tech"/>
+
+
+  </RelativeLayout>
+
+
+
+
+
+  </RelativeLayout>
+
+
+
+
+
+
+
+

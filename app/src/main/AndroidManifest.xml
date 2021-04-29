@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cseraj.rpiteachers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="RPI Contacts"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:label">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeachersActivity"
+            android:label="Teachers"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".CivilActivity"
+            android:label="Civil"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".ElectricalActivity"
+            android:label="Electrical"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".ElectronicsActivity"
+            android:label="Electronics"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".ElectromedicalActivity"
+            android:label="Electromedical"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".MechanicalActivity"
+            android:label="Mechanical"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".MechatronicsActivity"
+            android:label="Mechatronics"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".PowerActivity"
+            android:label="Power"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".ComputerActivity"
+            android:label="Computer"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".NonActivity"
+            android:label="Non Tech"
+            android:parentActivityName=".TeachersActivity" />
+        <activity
+            android:name=".StuffActivity"
+            android:label="Stuff"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OfficerActivity"
+            android:label="Officer-In-Charge"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WorkerActivity"
+            android:label="Workers"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".WebActivity"
+            android:label="Rpi Website"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About Rpi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeveloperActivity"
+            android:label="About Developers"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>
